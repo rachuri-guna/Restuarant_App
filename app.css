@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.line {
+  border-left: 2px solid black;
+  height: 100%;
+  position: fixed;
+  left: 45%;
+  margin-left: -0.3rem;
+  top:0px;
+}
+
+html, body, section {
+  height: 100%;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 1.25rem;
+  line-height: 100%;
+  text-align: center;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+}
+
+h4 {
+  font-size: 1.5rem;
+  margin: 0 0 0.75rem 0;
+  top: 0rem;
+}
+p{
+  font-size: 0.8rem;
+}
+.container {
+  display: flex;
+}
+
+.table {
+  width: 30rem;
+  border: 1px solid ghostwhite;
+  left: 2rem;
+  padding: 1rem;
+  margin: 1rem;
+  box-shadow: 5px 5px ghostwhite;
+  cursor: pointer;
+}
+
+.left-half,.right-half {
+  flex: 1;
+  padding: 1rem;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.food {
+  width: 35rem;
+  border: 1px solid ghostwhite;
+  left: 2rem;
+  padding: 1rem;
+  margin: 1rem;
+  box-shadow: 5px 5px ghostwhite;
+
+}
+
+#tableFilter,#menuFilter {
+  margin-top: 0.5rem;
+  width: 20rem;
+  align-self: center;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Modal (background) */
+.modal {
+display: none; /* Hidden by default */
+position: fixed; /* Stay in place */
+z-index: 1; /* Sit on top */
+left: 0;
+top: 0;
+width: 100%; /* Full width */
+height: 100%; /* Full height */
+overflow: auto; /* Enable scroll if needed */
+background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+
+/* responsive */
+
+@media screen and (max-width: 300px)
+{
+  html {
+      font-size: 25%;
+      width: auto;
+  }
+} 
+
+
+@media screen and (max-width: 600px)
+{
+  html {
+      font-size: 45%;
+      width: auto;
+  }
+} 
+
+@media screen and (max-width: 768px)
+{
+  html {
+      font-size: 50%;
+      width: auto;
+  }
+} 
+
+@media screen and (max-width: 998px)
+{
+  html {
+      font-size: 55%;
+      width: auto;
+  }
+} 

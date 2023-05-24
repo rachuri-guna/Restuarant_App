@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="app.css" rel="stylesheet">
+    <title>Restaurant</title>
+  </head>
+  <body>
+    <section class="container">
+      <div class="left-half">
+        <article>
+          <h3>Tables</h3>
+        </article>
+        <div class="search-table">
+          <input id="tableFilter" type="text" placeholder="Search Table">
+        </div>
+        
+        <div id="table-container">
+          <div class="table" onclick="showModal('Table-1')" id="Table-1">
+            <h5>Table-1</h5>
+            <p>Rs.0 | Total items:0</p>
+          </div>
+          <div class="table" onclick="showModal('Table-2')" id="Table-2">
+            <h5>Table-2</h5>
+            <p>Rs.0 | Total items:0</p>
+          </div>
+          <div class="table" onclick="showModal('Table-3')" id="Table-3">
+            <h5>Table-3</h5>
+            <p>Rs.0 | Total items:0</p>
+          </div>
+          <div class="table" onclick="showModal('Table-4')" id="Table-4">
+            <h5>Table-4</h5>
+            <p>Rs.0 | Total items:0</p>
+          </div>
+          <div class="table" onclick="showModal('Table-5')" id="Table-5">
+            <h5>Table-5</h5>
+            <p>Rs.0 | Total items:0</p>
+          </div>
+        </div>
+        <div id="myModal" class="modal">
+          <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+          </div>
+        </div>
+      </div>
+      <div class="line"></div>
+      <div class="right-half">
+        <article>
+          <h3>Menu</h3>
+        </article>
+        <div class="search-menu">
+          <input id="menuFilter" type="text" placeholder="Search menu..by course, by food.">
+        </div>
+        <div id="menu-items">
+          <div id="Main">
+            <div class="food" id="Palak-Paneer" type="Main" draggable="true">
+              <h5>Palak Paneer</h5>
+              <p>Rs.280</p>
+            </div>
+            <div class="food" id="Mixed-Veg"  type="Main" draggable="true">
+              <h5>Mixed Veg Curry</h5>
+              <p>Rs.250</p>
+            </div>
+            <div class="food" id="Biryani"  type="Main" draggable="true">
+              <h5>Biryani</h5>
+              <p>Rs.200</p>
+            </div>
+          </div>
+          <div id="Desserts">
+            <div class="food" id="Black-Forest" type="Desserts" draggable="true">
+              <h5>Black Forest Pastry</h5>
+              <p>Rs.80</p>
+            </div>
+            <div class="food" id="Choco-Truffle" type="Desserts" draggable="true">
+              <h5>Choco Truffle pastry</h5>
+              <p>Rs.90</p>
+            </div>
+          </div>
+          <div id="Entree">
+            <div class="food" id="French-Fries" type="Entree" draggable="true">
+              <h5>French Fries</h5>
+              <p>Rs.100</p>
+            </div>
+            <div class="food" id="Spring-Rolls" type="Entree" draggable="true">
+              <h5>Spring Rolls</h5>
+              <p>Rs.120</p>
+            </div>
+          </div>
+          <div id="Beverages">
+            <div class="food" id="Cold-Coffee" type="Beverages" draggable="true">
+              <h5>Cold Coffee</h5>
+              <p>Rs.75</p>
+            </div>
+            <div class="food" id="Fresh-Lime" type="Beverages" draggable="true">
+              <h5>Fresh Lime</h5>
+              <p>Rs.50</p>
+            </div>
+          </div>
+        </div>
+    </section>
+    <script src="app.js"></script>
+  </body>
+</html>
